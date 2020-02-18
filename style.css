@@ -1,0 +1,35 @@
+html, body, main{
+    height: 100vh;
+}
+#grid-page{
+    display: grid;
+    grid-template-areas: 
+        "title           title              title"
+        "left-background center-background right-background"
+        "left-background footer            right-background";
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: 10% 80% 10%;
+    height: 100%;
+
+}
+#div-title{
+    grid-area: title;
+    background-color: pink;
+}
+#background-left{
+    grid-area: left-background;
+    background-color: yellow;
+}
+#background-center{
+    grid-area: center-background;
+    background-color: gray;
+
+}
+#background-right{
+    grid-area: right-background;
+    background-color: orange;
+}
+#footer{
+    grid-area: footer;
+    background-color: purple;
+}
